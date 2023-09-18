@@ -1,0 +1,33 @@
+{
+  "name": "base-skills",
+  "version": "1.0.0",
+  "description": "my base skills of web-dev",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --open"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "scss",
+    "js",
+    "webpack",
+    "webpack-js"
+  ],
+  "author": "Oleksandr Kalita <olexandr.kalita@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.67.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
