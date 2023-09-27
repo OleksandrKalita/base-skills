@@ -4,17 +4,38 @@ $color-background: #1D1D1E;
 $color-primary: #3790C7;
 $transition-button: all 0.2s ease 0s;
 
+.announcement {
+    background-color: #272728;
+}
+.announcement__container {
+    position: relative;
+    padding: 5px 0;
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.announcement__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: $color-primary;
+}
 .header {
+    position: sticky;
+    top: 0;
     font-family: 'Ubuntu', sans-serif;
     background-color: $color-background;
 }
 .header__container {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 720px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 35px 0;
+    padding: 25px 10px;
 }
 .header__headline {
     font-size: 26px;
@@ -45,6 +66,10 @@ $transition-button: all 0.2s ease 0s;
     display: flex;
     align-items: center;
     margin-right: 10px;
+    transition: all 0.3s;
+}
+.header__picture-box:hover {
+    margin-bottom: 6px;
 }
 .header__image {
     position: absolute;
@@ -53,13 +78,13 @@ $transition-button: all 0.2s ease 0s;
 }
 .header__button {
     font-size: 18px;
-    padding: 6px 12px
+    padding: 5px 12px;
 }
 .button {
     color: #FFFFFF;
     background-color: $color-primary;
     border: none;
-    border-radius: 18px;
+    border-radius: 6px;
     transition: $transition-button;
     text-shadow: 2px 0px 4px rgb(0, 0, 0);
 }

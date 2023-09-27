@@ -6,13 +6,14 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
     mode: "development",
-    entry: "./src/scripts/index.js",
+    entry: ["@babel/polyfill", "./src/scripts/index.js"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name]-[hash].js",
     },
     devServer: {
-        port: 3200,
+        host: '0.0.0.0',
+        port: 3680,
     },
     plugins: [
         new HtmlWebpackplugin({
