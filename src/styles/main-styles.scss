@@ -45,8 +45,20 @@ $transition-button: all 0.2s ease 0s;
         border: 1px solid #94192a;
     }
 }
+#task-date-input {
+    width: 220px;
+    background-color: #212121;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    &:focus {
+        outline: 0;
+    }
+}
 #task-button,
-#upload-button {
+#upload-button,
+#sort-button {
     padding: 5px 12px;
 }
 
